@@ -397,6 +397,8 @@ font-weight:semibold;
 font-size:25px;
 padding: 8px 16px;
 
+min-width: 300px;
+
     
 text-align: center;
     background-color: #a2d5ac;

@@ -362,17 +362,43 @@ padding-left:20px
 
 
 
+  .btn-container {
+        display: flex;
+        justify-content: flex-start; /* Align items to the start */
+        align-items: center; /* Center items vertically */
+         /* Adjust gap between buttons */
+        margin-bottom: 20px; /* Optional margin for spacing */
+
+    vertical-align: middle;
+justify-content:center;
+  
+ text-align: center;
+
+
+
+
+    }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
 .showMoreBtn {
 font-weight:semibold;
 font-size:25px;
 padding: 8px 16px;
-    margin-top: 15px;
-margin-left:15px;
-margin-right:15px;
-    display: none; 
-    width: 340px; 
-    height: 60px; 
-border-radius:45px;
+
+    
+text-align: center;
     background-color: #a2d5ac;
     color: #fff; 
     border: none; 

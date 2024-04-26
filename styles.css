@@ -628,9 +628,15 @@ font-size:16px;
 
 
 .disclaimer-container {
+    
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: stretch; /* Stretch items to fill the container's height */
+    max-width: 100%; /* Optionally, set a maximum width */
         
        
-        height: calc(100vh * 2.5); 
+         
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);

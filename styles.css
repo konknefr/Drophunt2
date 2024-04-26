@@ -519,8 +519,14 @@ font-size:13px;
 
 .Ocontainer {
         
+        display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: stretch; /* Stretch items to fill the container's height */
+    max-width: 100%; /* Optionally, set a maximum width */
+        
        
-        height: calc(100vh * 2.3); 
+         
         background-color: white;
         
         padding: 20px;
@@ -660,10 +666,17 @@ font-size:16px;
 
 
 .main-container {
+    
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: stretch; /* Stretch items to fill the container's height */
+    max-width: 100%; /* Optionally, set a maximum width */
+        
 
         background-color: white;
 
-        height: calc(100vh * 2); 
+         
         
         
 

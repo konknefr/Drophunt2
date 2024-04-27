@@ -187,7 +187,25 @@ nav ul li a {
 
 
 
+.image-text-container{
 
+display: flex;
+        align-items: center;
+margin-left:15px;
+
+
+
+
+}
+
+
+.image-text{
+
+margin-left: 5px; /* Adjust this as needed */
+
+
+
+}
 
 
 

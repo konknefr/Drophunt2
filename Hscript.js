@@ -168,7 +168,7 @@ const xcontainer = document.getElementById('xcontainer');
         if (email !== '') {
             const apiKey = '949ed296-1a29-47d2-9bb0-14499c651247';
             const listId = 'b3c1c780-0466-11ef-b337-69c4a66d3b77';
-            const apiUrl = `https://emailoctopus.com/lists/${listId}/members/embedded/1.0/add`;
+const apiUrl = `https://emailoctopus.com/lists/b3c1c780-0466-11ef-b337-69c4a66d3b77/members/embedded/1.0/add`;
 
             const data = {
                 api_key: apiKey,

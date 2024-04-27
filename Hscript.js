@@ -148,3 +148,60 @@ const xcontainer = document.getElementById('xcontainer');
     xcontainer.addEventListener('mouseleave', () => {
       isScrolling = false;
     });
+    
+    
+    
+    
+    
+    
+    
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('newsletter-form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const emailInput = document.getElementById('email');
+        const email = emailInput.value.trim();
+
+        if (email !== '') {
+            const apiKey = '949ed296-1a29-47d2-9bb0-14499c651247';
+            const listId = 'b3c1c780-0466-11ef-b337-69c4a66d3b77';
+            const apiUrl = `https://emailoctopus.com/lists/${listId}/members/embedded/1.0/add`;
+
+            const data = {
+                api_key: apiKey,
+                email_address: email,
+                status: 'subscribed'
+            };
+
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(result => {
+                console.log('Successfully subscribed:', result);
+                // Optionally, you can display a success message to the user
+                alert('Successfully subscribed to newsletter.');
+            })
+            .catch(error => {
+                console.error('Error subscribing:', error.message);
+                // Optionally, you can display an error message to the user
+                alert('Error subscribing to newsletter. Please try again.');
+            });
+        } else {
+            // Handle empty email input
+            alert('Please enter your email address.');
+        }
+    });
+});

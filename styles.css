@@ -6,9 +6,9 @@ body {
 margin:0;
 
 letter-spacing:1px;
-background:#f9f9f9;
-
- font-family: "Open Sans", sans-serif;
+background: linear-gradient(to bottom, #000428, #004e92, #f3904f, #f9f9f9);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
 
 
 

@@ -5,9 +5,10 @@ body {
   letter-spacing:1px; 
 
 
-   background: linear-gradient(to bottom, #000428, #004e92, #f3904f, #f9f9f9);
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #000033, #000066 30%, #000099 60%, #ff6600 100%);
+            background-size: cover;
  
     
   }
